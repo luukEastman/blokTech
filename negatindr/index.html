@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>NEGATINDR</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="icon">
+        <li> <a href=""> <img src="img/profileIcon.svg" alt=""> </a> </li>
+        <li> <a href=""> <h1>NEGATINDR</h1>                     </a> </li>
+        <li> <a href=""> <img src="img/optionsIcon.svg" alt=""> </a> </li>
+      </ul>
+   </nav>
+  </header>
+
+  <main>
+    <section class = "foto"> <!-- de profielfoto-->
+      <img src="img/placeholder1.svg" alt="Profielfoto">
+
+      <section> <!-- deze section bevat de like en dislike knop + de naam.
+
+           <!-- dit is de 'like' knop -->
+        <div>  <!-- een div voor het formulier, want een form kan je niet flexxen -->
+          <form action="submit">
+            <fieldset>
+              <input class="visually-hidden"  id="leuk" type="checkbox">
+              <label for="leuk">❤️</label>
+            </fieldset>
+          </form>
+        </div>
+           <!-- Dit is de naam van de persoon in de foto -->
+          <h2>Susan Floep (32)</h2>
+
+          <!-- Dit is de 'dislike' knop -->
+        <div>
+          <form action="submit">
+            <fieldset>
+              <input class="visually-hidden"  id="nietLeuk" type="checkbox">
+              <label for="nietleuk">❌</label>
+            </fieldset>
+          </form>
+      </div>
+      </section>
+
+    </section>
+    <section>
+      <h2>Bad qualities</h2>
+      <ul>
+        <li>
+          <h3> Sloddervos </h3>
+          <p> 80% </p>
+        </li>
+        <li>
+          <h3> Luiwammes </h3>
+          <p> 30% </p>
+        </li>
+      </ul>
+      <button> Check ⬆️ Bio </button> <!-- Onder dit punt zou de detailpagina van het account verstopt moeten zitten. -->
+    </section>
+
+    <article> <!-- wanneer je de detailpagina opent kan je foto's zien in een carousel -->
+      <section>
+        <ul>
+          <li><img src="img/placeholder1.svg" alt=""></li>
+          <li><img src="img/placeholder2.svg" alt=""></li>
+          <li><img src="img/placeholder3.svg" alt=""></li>
+          <li><img src="img/placeholder4.svg" alt=""></li>
+        </ul>
+      </section>
+
+      <section> <!-- een stukje texts over Susan-->
+        <h2> Susan Floep (32) </h2>
+        <p> "De hele avond in je eentje netflix kijken telt als uitgaan" </p>
+
+        <ul> <!-- Dit zijn de slechte eigenschappen die susan heeft ingevult in haar account. -->
+          <li>
+            <form action="">
+              <fieldset> <!-- Het idee is dat je de eigenschap ziet en als je er op klikt opent een dropdown, met info die Susan erover kan schrijven.-->
+                <label for="">
+                  <h3> Sloddervos </h3>
+                  <p> 80% </p>
+                </label>
+                <input type="checkbox">
+                <p> blablabbalbal </p>
+              </fieldset>
+            </form>
+          </li>
+          <li>
+            <form action="">
+              <fieldset>
+                <label for=""><h3> Luiwammes </h3>
+                  <p> 30% </p>
+                </label>
+                <input type="checkbox">
+                <p> blablabbalbal </p>
+              </fieldset>
+            </form>
+          </li>
+          <li>
+            <form action="">
+              <fieldset>
+                <label for="">
+                  <h3> Alcoholist </h3>
+                   <p> 5% </p>
+                </label>
+                <input type="checkbox">
+                  <p> blablabbalbal </p>
+              </fieldset>
+            </form>
+          </li>
+        </ul>
+      </section>
+     </article>
+
+  </main>
+
+  <footer>
+    <nav> <!--bottom navigatie-->
+      <ul class="icon">
+        <li><a href=""><img src="img/optionsIcon.svg" alt=""></a></li>
+        <li><a href=""><img src="img/optionsIcon.svg" alt=""></a></li>
+        <li><a href=""><img src="img/optionsIcon.svg" alt=""></a></li>
+        <li><a href=""><img src="img/optionsIcon.svg" alt=""></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

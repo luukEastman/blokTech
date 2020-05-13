@@ -1,0 +1,143 @@
+ /* GENERAL  */
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family:  sans-serif;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+
+    bron: https://a11yproject.com/posts/how-to-hide-content/
+}
+
+.icon img{
+  width: 10vw;
+}
+
+
+/* NAVIGATIE */
+header{
+width: 100vw;
+height: 10vh;
+background-color: #eee;
+}
+
+nav{
+width: 100%;
+height: 100%;
+}
+
+header nav ul{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0;
+margin: 0;
+}
+
+header nav li{
+list-style: none;
+}
+
+header nav a{
+text-decoration: none;
+color: purple;
+}
+
+header nav h1{
+padding: 0;
+margin: 0;
+}
+
+/* PROFIELFOTO */
+main {
+  width: 90%;
+  margin: 5vw;
+}
+
+main .foto img {
+position: relative;
+}
+
+main section section {
+width: 90%;
+position: absolute;
+top: 55%;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+main section section h2{
+color:white;
+background-color: rgba(0,0,0,0.5);
+}
+
+main section section div form{
+background-color: white;
+width: 15vw;
+height: 15vw;
+border-radius: 100%;
+}
+
+main section section div form fieldset{
+border-style: none;
+/* display: flex;
+justify-content: center;
+ */
+}
+
+fieldset label{
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  transform: translateY(50%);
+}
+
+/* BOTTOM NAV */
+footer{
+width: 100vw;
+height: 10vh;
+background-color: #eee;
+
+}
+
+nav{
+width: 100%;
+height: 100%;
+}
+
+footer nav ul{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0;
+margin: 0;
+}
+
+footer nav ul li{
+  list-style: none;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav ul li + li{ /*De lijntjes tussen de bottom nav bar.*/
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-color: #000;
+}
